@@ -53,8 +53,74 @@ body {
   clear: both;
   margin-top: -30px;
 }
-#main-content span p{
-  color:black;
+
+#main-content section{
+  font-size:1.25em;
+  text-align: center;
+  border:1px solid black;
+  color: black;
   background-color: gray;
+  float: right;
+  overflow: none;
+}
+
+#main-content .title{
+  color: blue;
+}
+
+p.content{
+  padding: 10px 10px 0px 10px;
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
   
+  /* End Header */
+
+  /* Home Page */
+
+  /* End Home Page */
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Home Page */
+
+  /* End Home Page */
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    height: 80px;
+  }
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 5vw; /* 1vw = 1% of viewport width */
+  }
+
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+}
+
+
+/********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+  /* Header */
+  .navbar-brand h1 { /* name */
+    padding-top: 5px;
+    font-size: 6vw;
+  }
+  /* End Header */
+ 
 }
