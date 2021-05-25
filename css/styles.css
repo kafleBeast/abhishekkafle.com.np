@@ -1,7 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
 body {
   font-size: 16px;
   color: #fff;
-  background-color: #fff;
+  background-color: #fffbfc;
   font-family: 'Oxygen', sans-serif;
 }
 
@@ -12,21 +16,21 @@ body {
 /** HEADER **/
 .navbar {
   border-radius:0px;
-  background-color: white;
+  background-color: #ffc0cb;
 }
 
 .navbar-brand {
-  padding-left:25px;
-  color: white;
-  font-family: 'Lora', serif;
-  font-size: 1.5em;
+  padding: 10px 0px 0px 25px;
+  margin:auto;
+  font-size: 2em;
   font-weight: bold;
   text-shadow: 1px 1px 1px #222;
-  float:right;
 }
 
 .navbar-brand: hover{
   color: white;
+  text-decoration-color: blue;
+
 }
 
 .nav{
@@ -41,10 +45,13 @@ body {
   padding: 0;
 }
 
-#nav-list{
+.nav-list{
   margin-top:10px;
 }
 
+li.nav-list:hover{
+  background-color: white;
+}
 .navbar-toggle {
   border: 1.5px solid #61122f;
   margin-right: 25px;
@@ -54,11 +61,39 @@ body {
   background-color: white;
 }
 
+h1{
+  margin-bottom: 15px;
+  text-align: center;
+  color: green;
+  font-size: 50px;
+  font-weight: bold;
+}
+
 li{
   box-sizing: border-box;;
   width:100%;
 }
 
+.title{
+  text-align:center;
+  background-color: yellow;
+  border: 1px solid black;
+  font-size: 1.5em;
+  overflow: none;
+  width: 100px;
+  float:auto;
+  margin: auto;
+  font-weight: bold;
+
+}
+
+p.title:hover{
+  color: red;
+}
+
+.content{
+  font-size: 20px;
+}
 .menu-item{
   padding: 0;
   margin: 0;
@@ -69,25 +104,19 @@ li{
   display: block;
 }
 .menu-item:hover{
-  background-color: rgba(0,0,0,0.9);
-  color: rgba(0,0,0,0.4);
+  background-color: red;
+  color: red;
 }
 .row{
   margin: 20px;
 }
-.col-4{
+.box{
   margin: 20px;
   width: auto;
   height: auto;
   color: black;
   background-color: rgba(0,0,0,0.2);
-  font-family: "Comic Sans MS", cursive, sans-serif;
   padding: 20px;
-}
-.content{
-  text-align: center;
-  font-size: 20px;
-  font-weight: bold;
 }
 
 #top{
