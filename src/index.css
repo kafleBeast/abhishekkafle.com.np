@@ -1,0 +1,274 @@
+/*Landing Page CSS*/
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container{
+    /* border: 2px solid purple; */
+}
+
+header {
+  /* border: 2px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  margin-right: 3%;
+  margin-left: 3%;
+  margin-top:2%;
+}
+
+.name{
+  display: inline;
+  align-self: center;
+  border-radius: 50%;
+}
+
+.Video{
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  align-items:stretch;
+  position: 'relative';
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.texthead{
+  position: absolute;
+  font-family: 'EB Garamond', serif;
+  font-size: 80px;
+}
+
+.linegraph{
+  /* border: 2px solid red; */
+  margin-top:10px;
+  height: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.footer{
+  /* border: 2px solid red; */
+  height: 200px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end;
+  margin-bottom: 0px;
+}
+.footerContainer{
+  /* border: 2px solid blue; */
+}
+.footElement{
+  /* border: 2px solid green; */
+  display: flex;
+  justify-content: center;
+  width: 400px;
+}
+
+.fE2{
+/* border: 2px solid red; */
+margin-bottom: 5px;
+}
+
+input {
+  width: 200px;
+  border-radius: 10px;
+  border-width: 1px;
+}
+
+input::placeholder {
+  font-style: italic;
+  font-size: 1em;
+  color: black;
+  background: thistle;
+  padding: 5px;
+}
+
+/*Top Gainers-Losers Page CSS*/
+
+.losersTable {
+  border: 5px double red !important;
+  background-color: #FF7377;
+  color: white;
+}
+
+.losersTitleTable{
+  background-color: red;
+}
+
+.gainersTable{
+  border: 5px double green !important;
+  background-color: #66bb6a;
+  color: white;
+}
+
+.gainersTitleTable{
+  background-color: green;
+}
+
+/*Screener Page CSS*/
+
+.screener {
+  width: 400px;
+  float:left;
+  margin: 0  30px 0;
+  text-align: center;
+  background-color: #EDD8D8;
+}
+.screener label {
+  text-align: left;
+  display: flex;
+}
+
+.screener select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  display: block;
+}
+
+.screener input{
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  /* display: block; */
+}
+
+.screener input.screenerInput{
+  width: 46%;
+}
+
+div.vertical-line{
+  width: 2px;
+  background-color: #7b7b7b;
+  height: 800px; 
+  float: left;
+}
+
+div.screener-content{
+  border: solid red 2px;
+  margin: 0 30px;
+  float: left;
+}
+
+
+/* StockDetails Page CSS*/
+
+
+div.stock-details{
+  border: solid red 2px;
+}
+
+/* div.test-div{
+  border: solid blue 2px;
+} */
+
+div h1.stockDetails-title{
+  border: solid green 2px;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #EDD8D8;
+}
+
+div div #candle-graph{
+  display: flex;
+  justify-content: center;
+  width: 600px;
+  height:500px;
+  margin: 20px auto;
+  background-color: #EDD8D8;
+}
+
+div.stockDetails-contentTitles{
+  border: solid black 2px;
+  display: flex;
+  justify-content:flex-start;
+}
+
+div div.stockDetails-contents{
+  border: solid blue 2px;
+  height: 500px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+div div.stockDetails-button{
+  margin: auto;
+}
+
+/*  HotMarket Page CSS*/
+/*                    */
+
+div h1.hotmarket-title{
+  border: solid green 2px;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #EDD8D8;
+}
+
+div div h3.heatMap-title{
+  display: flex;
+  justify-content: center;
+  width: 370px;
+  height: 40px;
+  margin: left;
+  border-radius: 40px;
+  background-color: #EDD8D8;
+  border: solid blue 2px;
+}
+
+div div.heatMap-allIndustries{
+  display: flex;
+  justify-content: center;
+  height:500px;
+  margin: 20px auto;
+  background-color: #EDD8D8;
+}
+
+div div.heatMap-content1{
+  display: flex;
+  justify-content:center;
+  width: 500px;
+  height:400px;
+  margin: 50px 0 0 -380px;
+  background-color: #a5f08f;
+  border: solid red 2px;
+}
+
+div div.heatMap-content2{
+  display: flex;
+  justify-content:center;
+  width: 500px;
+  height:400px;
+  margin: 50px 0 0 250px;
+  background-color: #a5f08f;
+  border: solid red 2px;
+}
+
