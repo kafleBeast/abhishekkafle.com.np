@@ -5,16 +5,7 @@ import {  withStyles, makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import useFetch from '../useFetch';
 import * as ReactBootStrap from "react-bootstrap";
-import Table from '@material-ui/core/Table';
-import TableCell from '@material-ui/core/TableCell';
-import TableRow from '@material-ui/core/TableRow';
-import './App.css';
 
-const useStyles = makeStyles({
-    table: {  
-      width:650,
-    },
-});
 
 const BootstrapButton = withStyles({
     root: {
@@ -28,8 +19,6 @@ const BootstrapButton = withStyles({
   })(Button);
 
 const StockDetails = () => {
-    const classes = useStyles();
-
     const [name, setName] = useState('aapl');
     const [keyStatsButton, setKeyStatsButton] = useState(true);
     const [analystsButton, setAnalystsButton] = useState(false);
