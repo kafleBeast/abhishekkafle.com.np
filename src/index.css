@@ -272,3 +272,38 @@ div div.heatMap-content2{
   border: solid red 2px;
 }
 
+/* About US Page CSS*/
+div h1.aboutUS-title{
+  border: solid green 2px;
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  margin: auto;
+  border-radius: 30px;
+  background-color: #EDD8D8;
+}
+
+div div.aboutUsImage, .aboutUsContent{
+  border: solid red 2px;
+  height: 400px;
+  width: 400px;
+  display: flex;
+  float: left;
+  margin: auto;
+}
+
+div div.aboutUsImage{
+  border-radius: 400px;
+}
+
+div div.aboutUsContent{
+  height: 300px;
+}
+
+div.aboutUs-contents{
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+
+}
